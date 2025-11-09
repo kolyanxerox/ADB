@@ -1,0 +1,15 @@
+package androidx.activity;
+
+import android.view.View;
+
+/* loaded from: classes.dex */
+public final class Api19Impl {
+    public static final Api19Impl INSTANCE = new Api19Impl();
+
+    private Api19Impl() {
+    }
+
+    public final boolean isAttachedToWindow(View view) {
+        return view.isAttachedToWindow();
+    }
+}

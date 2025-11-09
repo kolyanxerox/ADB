@@ -1,0 +1,259 @@
+package com.google.protobuf;
+
+import com.google.protobuf.Type;
+import com.google.protobuf.kotlin.DslList;
+import com.google.protobuf.kotlin.DslProxy;
+import com.google.protobuf.kotlin.ProtoDslMarker;
+import java.util.List;
+
+/* loaded from: classes2.dex */
+public final class TypeKt {
+    public static final TypeKt INSTANCE = new TypeKt();
+
+    @ProtoDslMarker
+    public static final class Dsl {
+        public static final Companion Companion = new Companion(null);
+        private final Type.Builder _builder;
+
+        public static final class Companion {
+            public /* synthetic */ Companion(kotlin.jvm.internal.OooOO0O oooOO0O) {
+                this();
+            }
+
+            public final /* synthetic */ Dsl _create(Type.Builder builder) {
+                kotlin.jvm.internal.OooOo.OooO0o0(builder, "builder");
+                return new Dsl(builder, null);
+            }
+
+            private Companion() {
+            }
+        }
+
+        public static final class FieldsProxy extends DslProxy {
+            private FieldsProxy() {
+            }
+        }
+
+        public static final class OneofsProxy extends DslProxy {
+            private OneofsProxy() {
+            }
+        }
+
+        public static final class OptionsProxy extends DslProxy {
+            private OptionsProxy() {
+            }
+        }
+
+        public /* synthetic */ Dsl(Type.Builder builder, kotlin.jvm.internal.OooOO0O oooOO0O) {
+            this(builder);
+        }
+
+        public final /* synthetic */ Type _build() {
+            Type typeBuild = this._builder.build();
+            kotlin.jvm.internal.OooOo.OooO0Oo(typeBuild, "_builder.build()");
+            return typeBuild;
+        }
+
+        public final /* synthetic */ void addAllFields(DslList dslList, Iterable values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            this._builder.addAllFields(values);
+        }
+
+        public final /* synthetic */ void addAllOneofs(DslList dslList, Iterable values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            this._builder.addAllOneofs(values);
+        }
+
+        public final /* synthetic */ void addAllOptions(DslList dslList, Iterable values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            this._builder.addAllOptions(values);
+        }
+
+        public final /* synthetic */ void addFields(DslList dslList, Field value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.addFields(value);
+        }
+
+        public final /* synthetic */ void addOneofs(DslList dslList, String value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.addOneofs(value);
+        }
+
+        public final /* synthetic */ void addOptions(DslList dslList, Option value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.addOptions(value);
+        }
+
+        public final void clearEdition() {
+            this._builder.clearEdition();
+        }
+
+        public final /* synthetic */ void clearFields(DslList dslList) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            this._builder.clearFields();
+        }
+
+        public final void clearName() {
+            this._builder.clearName();
+        }
+
+        public final /* synthetic */ void clearOneofs(DslList dslList) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            this._builder.clearOneofs();
+        }
+
+        public final /* synthetic */ void clearOptions(DslList dslList) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            this._builder.clearOptions();
+        }
+
+        public final void clearSourceContext() {
+            this._builder.clearSourceContext();
+        }
+
+        public final void clearSyntax() {
+            this._builder.clearSyntax();
+        }
+
+        public final String getEdition() {
+            String edition = this._builder.getEdition();
+            kotlin.jvm.internal.OooOo.OooO0Oo(edition, "_builder.getEdition()");
+            return edition;
+        }
+
+        public final /* synthetic */ DslList getFields() {
+            List<Field> fieldsList = this._builder.getFieldsList();
+            kotlin.jvm.internal.OooOo.OooO0Oo(fieldsList, "_builder.getFieldsList()");
+            return new DslList(fieldsList);
+        }
+
+        public final String getName() {
+            String name = this._builder.getName();
+            kotlin.jvm.internal.OooOo.OooO0Oo(name, "_builder.getName()");
+            return name;
+        }
+
+        public final DslList<String, OneofsProxy> getOneofs() {
+            List<String> oneofsList = this._builder.getOneofsList();
+            kotlin.jvm.internal.OooOo.OooO0Oo(oneofsList, "_builder.getOneofsList()");
+            return new DslList<>(oneofsList);
+        }
+
+        public final /* synthetic */ DslList getOptions() {
+            List<Option> optionsList = this._builder.getOptionsList();
+            kotlin.jvm.internal.OooOo.OooO0Oo(optionsList, "_builder.getOptionsList()");
+            return new DslList(optionsList);
+        }
+
+        public final SourceContext getSourceContext() {
+            SourceContext sourceContext = this._builder.getSourceContext();
+            kotlin.jvm.internal.OooOo.OooO0Oo(sourceContext, "_builder.getSourceContext()");
+            return sourceContext;
+        }
+
+        public final Syntax getSyntax() {
+            Syntax syntax = this._builder.getSyntax();
+            kotlin.jvm.internal.OooOo.OooO0Oo(syntax, "_builder.getSyntax()");
+            return syntax;
+        }
+
+        public final int getSyntaxValue() {
+            return this._builder.getSyntaxValue();
+        }
+
+        public final boolean hasSourceContext() {
+            return this._builder.hasSourceContext();
+        }
+
+        public final /* synthetic */ void plusAssignAllFields(DslList<Field, FieldsProxy> dslList, Iterable<Field> values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            addAllFields(dslList, values);
+        }
+
+        public final /* synthetic */ void plusAssignAllOneofs(DslList<String, OneofsProxy> dslList, Iterable<String> values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            addAllOneofs(dslList, values);
+        }
+
+        public final /* synthetic */ void plusAssignAllOptions(DslList<Option, OptionsProxy> dslList, Iterable<Option> values) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(values, "values");
+            addAllOptions(dslList, values);
+        }
+
+        public final /* synthetic */ void plusAssignFields(DslList<Field, FieldsProxy> dslList, Field value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            addFields(dslList, value);
+        }
+
+        public final /* synthetic */ void plusAssignOneofs(DslList<String, OneofsProxy> dslList, String value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            addOneofs(dslList, value);
+        }
+
+        public final /* synthetic */ void plusAssignOptions(DslList<Option, OptionsProxy> dslList, Option value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            addOptions(dslList, value);
+        }
+
+        public final void setEdition(String value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setEdition(value);
+        }
+
+        public final /* synthetic */ void setFields(DslList dslList, int i, Field value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setFields(i, value);
+        }
+
+        public final void setName(String value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setName(value);
+        }
+
+        public final /* synthetic */ void setOneofs(DslList dslList, int i, String value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setOneofs(i, value);
+        }
+
+        public final /* synthetic */ void setOptions(DslList dslList, int i, Option value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(dslList, "<this>");
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setOptions(i, value);
+        }
+
+        public final void setSourceContext(SourceContext value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setSourceContext(value);
+        }
+
+        public final void setSyntax(Syntax value) {
+            kotlin.jvm.internal.OooOo.OooO0o0(value, "value");
+            this._builder.setSyntax(value);
+        }
+
+        public final void setSyntaxValue(int i) {
+            this._builder.setSyntaxValue(i);
+        }
+
+        private Dsl(Type.Builder builder) {
+            this._builder = builder;
+        }
+    }
+
+    private TypeKt() {
+    }
+}
